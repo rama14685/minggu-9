@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>latihan grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            padding: 15px;
+            border: 1px solid rebeccapurple;
+            background-color: blueviolet;
+            color: beige;
+        }
+        row ::after{
+            background-color: blueviolet;
+            color: beige;
+            content: ;
+            clear: both;
+            display: table;
+
+        }
+        [class*="col-"]{
+            background-color: blueviolet;
+            color: beige;
+            float: left;
+            padding: 10px;
+            border: 1px solid rgb(209, 198, 207);
+        }
+
+        .col-1{width: 8.33%}
+        .col-2{width: 16.66%}
+        .col-3{width: 25%}
+        .col-4{width: 33.33%}
+        .col-5{width: 41.66%}
+        .col-6{width: 50%}
+        .col-7{width: 58.33%}
+        .col-8{width: 66.66%}
+        .col-9{width: 75%}
+        .col-10{width: 83.33%}
+        .col-11{width: 91.66%}
+        .col-12{width: 100%}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2 align="center"><i>LATIHAN</i></h2>
+    </header>
+    <main>
+        <nav class="col-12">
+            <ul>
+                <li>menu 1</li>
+                <li> menu 2</li>
+            </ul>
+        </nav>
+        <article class="col-6">
+            <h4>judul isi</h4>
+            <p><img src="contoh.jpg" class="col-6" style="margin: 0 10px ;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt harum velit. Et commodi tempore quibusdam perferendis ipsa praesentium nesciunt quisquam dicta eum. Esse distinctio error aliquid, odio quos necessitatibus!</p>
+        </article>
+    </main>
+    <footer align="center" class="col-12">
+        copyright <i>%copy</i> pbw2022
+
+    </footer>
+</body>
+</html>
